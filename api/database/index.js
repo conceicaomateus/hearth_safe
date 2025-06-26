@@ -1,15 +1,13 @@
-const mongoose = require("mongoose");
+const sqlite3 = require('sqlite3').verbose();
+const path = require('path');
 
-const connect = async () => {
-  try {
-    console.log("Connecting to MongoDB");
-    await mongoose.connect("mongodb://127.0.0.1:27017/hearth_safe");
-    console.log("Connected to MongoDB");
-  } catch (error) {
-    console.error("Error connecting to MongoDB: ", error);
+const dbPath = path.resolve(__dirname, '../hearth_safe.sqlite');
+const db = new sqlite3.Database(dbPath, (err) => {
+  if (err) {
+    console.error('Erro ao conectar ao SQLite:', err);
+  } else {
+    console.log('Conectado ao banco SQLite');
   }
-}
+});
 
-module.exports = {
-  connect
-};
+module.exports = db;

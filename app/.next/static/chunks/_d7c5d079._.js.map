@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Repos/heart_safe/app/app/page.tsx"],"sourcesContent":["\"use client\"\r\n\r\nimport { redirect } from \"next/navigation\"\r\nimport { useEffect } from \"react\"\r\n\r\nexport default function Redirect() {\r\n  useEffect(() => {\r\n    redirect(\"login\")\r\n  }, [])\r\n\r\n  return null\r\n}\r\n"],"names":[],"mappings":";;;AAEA;AACA;;AAHA;;;AAKe,SAAS;;IACtB,CAAA,GAAA,6JAAA,CAAA,YAAS,AAAD;8BAAE;YACR,CAAA,GAAA,qIAAA,CAAA,WAAQ,AAAD,EAAE;QACX;6BAAG,EAAE;IAEL,OAAO;AACT;GANwB;KAAA","debugId":null}},
-    {"offset": {"line": 37, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Repos/heart_safe/app/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0],"debugId":null}}]
-}
